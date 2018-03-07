@@ -1,6 +1,7 @@
 body, html{
   height: 100%;
   background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
 }
 
@@ -26,12 +27,6 @@ header h1{
   text-transform: uppercase;
 }
 
-/* header h3{
-  font-size: 24px;
-  font-weight: normal;
-  letter-spacing: 1.8em;
-} */
-
 .hubble{
   display: block;
   margin-left: auto;
@@ -43,14 +38,6 @@ header h1{
 
 }
 
-blockquote{
-  background-color: #777;
-  border: 4px solid #000;
-  border-radius: 2px;
-  margin-top: 20px;
-  padding: 10px;
-}
-
 .section1, .section2{
   text-align: center;
   padding: 20px;
@@ -59,6 +46,28 @@ blockquote{
 .section1{
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.hubbleSpaceTelescope{
+  background-color: #777;
+  border: 10px solid #000;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 100px;
+}
+
+caption{
+  text-align: center;
+}
+
+.hubble2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
 }
 
 .ultraDeepField{
