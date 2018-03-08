@@ -51,6 +51,10 @@ body{
   padding: 20px;
 }
 
+.hubbleText p{
+  text-indent: 50px;
+}
+
 .hubbleImgs{
   margin-bottom: 100px;
 }
@@ -124,6 +128,10 @@ body{
     line-height: 1.8em;
     letter-spacing: 0.8em;
   }
+
+  .hubbleText p{
+    text-indent: 40px;
+  }
 }
 
 @media (max-width: 575.98px){
@@ -141,6 +149,10 @@ body{
     font-weight: bolder;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .hubbleText p{
+    text-indent: 20px;
   }
 
   .hubbleInfo{
