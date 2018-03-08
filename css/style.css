@@ -1,85 +1,149 @@
-body, html{
-  height: 100%;
+body{
   background-color: #f4f4f4;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Space Mono', monospace;
   font-size: 24px;
 }
 
-.main{
-  background-color: #000;
-  padding: 20px;
-}
-
-header{
-  text-align: center;
-  font-family: impact, sans-serif;
+.header{
+  background-color: #aaa69a;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 50px 0 50px 75px;
-  background-color: #777;
-  border-top: 4px solid #000;
-  border-bottom: 4px solid #000;
+  padding: 20px;
+  border-top: 10px solid #000;
+  border-bottom: 10px solid #000;
+  border-radius: 10px;
 }
-header h1{
-  font-size: 54px;
-  font-weight: 500;
-  letter-spacing: 1.8em;
-  text-transform: uppercase;
+
+.header h1{
+  color: #000;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0.8em;
+}
+
+.hubbleMain{
+  background-color: #000;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .hubble{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding: 10px;
-  border: 2px solid #777;
-  border-radius: 5px;
-
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #aaa69a;
+  border-radius: 10px;
 }
 
-.section1, .section2{
-  text-align: center;
+.hubbleMain p{
+  background-color: #f4f4f4;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 20px;
+  border: 2px solid #aaa69a;
+  border-radius: 10px;
+}
+
+.hubbleText{
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 20px;
 }
 
-.section1{
-  margin-top: 50px;
-  margin-bottom: 50px;
+.hubbleImgs{
+  margin-bottom: 100px;
+}
+
+.hubbleSpace{
+  background-color: #aaa69a;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  border: 5px solid #000;
+  border-radius: 10px;
+
 }
 
 .hubbleSpaceTelescope{
-  background-color: #777;
-  border: 10px solid #000;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 100px;
-}
-
-caption{
-  text-align: center;
-}
-
-.hubble2{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
   border: 2px solid #000;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .ultraDeepField{
   background-image: url('../imgs/hubbleUDF2.jpg');
   position: relative;
-  width: 1000px;
-  height: 1000px;
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 1000px;
+  height: 1000px;
   margin: auto;
-  border: 10px #777 solid;
+  border: 10px #aaa69a solid;
+  border-radius: 50%;
+}
+
+.hubbleImgs p{
+  background-color: #f4f4f4;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.hubbleInfo{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+@media (max-width: 991.98px){
+  .ultraDeepField{
+    width: 700px;
+    height: 700px;
+  }
+}
+
+@media (max-width: 767.98px){
+  .ultraDeepField{
+    width: 500px;
+    height: 500px;
+  }
+
+  .header h1{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.8em;
+    letter-spacing: 0.8em;
+  }
+}
+
+@media (max-width: 575.98px){
+  body{
+    font-size: 16px;
+  }
+
+  .ultraDeepField{
+    width: 300px;
+    height: 300px;
+  }
+
+  .header h1{
+    font-size: 28px;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hubbleInfo{
+    font-size: 16px;
+  }
 }
